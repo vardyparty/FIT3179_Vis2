@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "How Have Footy Crowds Changed During Covid?",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/city_seasons.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "venue_filter": {"type": "multi", "fields": ["Venue"], "bind": "legend"}
+      },
+      "encoding": {
+        "x": {"field": "Year", "timeUnit": "year", "title": null},
+        "y": {"field": "Average Attendance", "type": "quantitative"},
+        "color": {"field": "Venue", "type": "nominal"},
+        "strokeWidth": {
+          "condition": {"selection": "venue_filter", "value": 5},
+          "value": 0.7
+        },
+        "tooltip": [
+          {"field": "Venue", "type": "nominal"},
+          {"field": "Average Attendance", "type": "quantitative"},
+          {"field": "Year", "type": "temporal", "title": "Year Beginning"},
+          {
+            "field": "Capacity",
+            "type": "quantitative",
+            "title": "Venue Capacity"
+          },
+          {
+            "field": "Average Attendance vs Capacity",
+            "type": "quantitative",
+            "format": "%"
+          }
+        ]
+      },
+      "mark": {"type": "line", "tooltip": {"content": "data"}}
+    },
+    {
+      "mark": "rule",
+      "encoding": {
+        "y": {
+          "aggregate": "median",
+          "field": "Average Attendance",
+          "title": "Average Attendance (Universal Average in Black)"
+        },
+        "color": {"value": "black"},
+        "size": {"value": 2}
+      }
+    }
+  ],
+  "config": {}
+}
