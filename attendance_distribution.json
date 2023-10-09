@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Attendance Distribution for all Australian Football Venues",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/games.csv"
+  },
+  "encoding": {
+    "x": {"bin": {"maxbins": 100}, "field": "Attendance"},
+    "y": {"field": "Venue"},
+    "size": {"aggregate": "count"}
+  },
+  "mark": "circle",
+  "config": {}
+}
