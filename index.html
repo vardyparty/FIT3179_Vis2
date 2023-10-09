@@ -12,7 +12,7 @@
   
 </head>
 <body>
-  <h1> Week 10 Homework </h1>
+  <h1> FIT3179 Visualisation Two </h1>
 
   <div class="pure-u-1-2">
   <div id="vis1" class="vis-container"></div>
@@ -20,11 +20,15 @@
   <div class="pure-u-1-2">
   <div id="vis2" class="vis-container"></div>
   </div>
+  <div class="pure-u-1-2">
+  <div id="vis3" class="vis-container"></div>
+  </div>
   
   
   <script>
     var specVis1 = "./aus_venues.json";
     var specVis2 = "./covid_attendances.json";
+    var specVis3 = "./home_away_heatmap.json
     vegaEmbed("#vis1", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis2", specVis2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
