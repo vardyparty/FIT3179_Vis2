@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Attendance Distribution for all Australian Football Venues",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/venue_city_proportions.csv"
+  },
+  "encoding": {
+    "x": {
+      "field": "Normalised Percentage of Stadium Capacity",
+      "type": "quantitative"
+    },
+    "y": {"field": "Attendees per Capita", "type": "quantitative"},
+    "size": {"field": "Average Attendance", "type": "quantitative"},
+    "color": {"field": "City"},
+    "opacity": {"field": "Year", "type": "ordinal"},
+    "tooltip": [
+      {"field": "Average Attendance", "type": "quantitative"},
+      {"field": "Year", "type": "quantitative"},
+      {"field": "City", "type": "nominal"},
+      {
+        "field": "Attendance",
+        "type": "quantitative",
+        "title": "Average Attendance",
+        "aggregate": "average"
+      },
+      {
+        "field": "Normalised Percentage of Stadium Capacity",
+        "type": "quantitative"
+      },
+      {"field": "Attendees per Capita", "type": "quantitative"}
+    ]
+  },
+  "mark": "circle",
+  "config": {}
+}
