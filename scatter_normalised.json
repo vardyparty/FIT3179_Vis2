@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Attendance Distribution for all Australian Football Venues",
+  "title": "Rates of Attendance for Major Australian Cities, Per Capita and Per Stadium Capacity",
   "width": 600,
   "height": 400,
   "data": {
