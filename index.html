@@ -14,17 +14,23 @@
 <body>
   <h1> FIT3179 Visualisation Two </h1>
 
-  <div class="pure-u-3-1">
+  <div class="pure-u-1-1">
   <div id="vis1" class="vis-container"></div>
   </div>
-  <div class="pure-u-3-1">
+  <div class="pure-u-1-1">
   <div id="vis2" class="vis-container"></div>
   </div>
-  <div class="pure-u-3-1">
+  <div class="pure-u-1-1">
   <div id="vis3" class="vis-container"></div>
   </div>
-  <div class="pure-u-3-1">
+  <div class="pure-u-1-1">
   <div id="vis4" class="vis-container"></div>
+  </div>
+  <div class="pure-u-1-1">
+  <div id="vis5" class="vis-container"></div>
+  </div>
+  <div class="pure-u-1-1">
+  <div id="vis6" class="vis-container"></div>
   </div>
   
   
@@ -33,10 +39,14 @@
     var specVis2 = "./covid_attendances.json";
     var specVis3 = "./home_away_heatmap.json";
     var specVis4 = "./comparison_barcharts.json";
+    var specVis5 = "./attendance_distribution.json";
+    var specVis6 = "./scatter_normalised.json";
     vegaEmbed("#vis1", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis2", specVis2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis3", specVis3, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis4", specVis4, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis5", specVis5, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis6", specVis6, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
