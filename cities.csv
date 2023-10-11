@@ -1,0 +1,37 @@
+City,Number of Games,Average Attendance,Latitude,Longitude,Stadiums,Known For,Origin Lat,Origin Lon,Dest Lat,Dest Lon
+Adelaide,281,35251,-34.9285,138.6007,"AAMI Stadium, Adelaide Oval, Norwood Oval, Summit Sports Park",Home of Adelaide Crows and Port Adelaide Power,,,,
+Alice Springs,9,5170,-23.698,133.8807,TIO Traeger Park,Yearly match featuring Melbourne,,,,
+Ballarat,12,7330,-37.5622,143.8503,Mars Stadium,Yearly match featuring Western Bulldogs,,,,
+Brisbane,162,18681,-27.4705,153.026,The Gabba,Home of Brisbane Lions,,,,
+Cairns,13,13,-16.9203,145.771,Cazaly's Stadium,Used as COVID hub during 2020,,,,
+Canberra,33,10655,-35.2809,149.13,Manuka Oval,Secondary home of Greater Western Sydney Giants,,,,
+Darwin,16,8460,-12.4637,130.8444,TIO Stadium,"Yearly match featuring Melbourne, then Gold Coast",,,,
+Geelong,95,22287,-38.1493,144.3598,GMHBA Stadium,Home of Geelong Cats,,,,
+Gold Coast,157,9857,-28.0167,153.4,Heritage Bank Stadium,Home of Gold Coast Suns,,,,
+Hobart,36,9737,-42.8826,147.3257,Blundstone Arena,Occasional matches featuring North Melbourne Kangaroos,,,,
+Launceston,48,12649,-41.4391,147.1358,University of Tasmania Stadium,Occasional matches featuring Hawthorn Hawks,,,,
+Melbourne,1070,40184,-37.8136,144.9631,"Marvel Stadium, Melbourne Cricket Ground","Home of all nine Melbourne teams, and the Grand Final",,,,
+Perth,275,37583,-31.9523,115.8613,"Domain Stadium, Optus Stadium",Home of Fremantle Dockers and West Coast Eagles,,,,
+Sydney,233,21975,-33.8688,151.2093,"Accor Stadium, Blacktown, GIANTS Stadium, Sydney Cricket Ground",Home of Greater Western Sydney Giants and Sydney Swans,,,,
+Townsville,1,7243,-19.259,146.8169,Riverway Stadium,"One match played in 2019, hosted by Gold Coast Suns",,,,
+,,,,,,,-37.8166,144.9475,-31.94,115.825
+,,,,,,,-31.94,115.825,-31.94,115.825
+,,,,,,,-31.94,115.825,-37.8166,144.9475
+,,,,,,,-37.8166,144.9475,-31.94,115.825
+,,,,,,,-31.94,115.825,-34.9155,138.5961
+,,,,,,,-34.9155,138.5961,-31.94,115.825
+,,,,,,,-31.94,115.825,-41.426,147.139
+,,,,,,,-41.426,147.139,-31.94,115.825
+,,,,,,,-31.94,115.825,-37.8166,144.9475
+,,,,,,,-37.8166,144.9475,-31.94,115.825
+,,,,,,,-31.94,115.825,-27.4858,153.0381
+,,,,,,,-27.4858,153.0381,-31.94,115.825
+,,,,,,,-31.94,115.825,-37.82,144.9834
+,,,,,,,-37.82,144.9834,-12.3988,130.8853
+,,,,,,,-12.3988,130.8853,-31.94,115.825
+,,,,,,,-31.94,115.825,-28.0063,153.3671
+,,,,,,,-28.0063,153.3671,-31.94,115.825
+,,,,,,,-31.94,115.825,-31.94,115.825
+,,,,,,,-31.94,115.825,-31.94,115.825
+,,,,,,,-31.94,115.825,-33.8942,151.2293
+,,,,,,,-33.8942,151.2293,-31.94,115.825
