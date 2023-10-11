@@ -81,7 +81,7 @@
 	
 
 <div id="vis6" class="vis"></div>
-  
+  <div id="vis7" class="vis"></div>
   
   <script>
     
@@ -91,6 +91,7 @@
     var specVis4 = "./covid_attendances.json";
     var specVis5 = "./comparison_barcharts.json";
     var specVis6 = "./attendance_distribution.json";
+    var specVis7 = "./map_updated.json";
     
     vegaEmbed("#vis1", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis2", specVis2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
@@ -98,6 +99,7 @@
     vegaEmbed("#vis4", specVis4, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis5", specVis5, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis6", specVis6, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis7", specVis7, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
