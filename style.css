@@ -2,6 +2,10 @@ html, body {
   background-color: #e3fff8
 }
 
+body {
+  display: inline-block;
+}
+
 h1 {
   text-align: center;
   font-family: 'Domine';
