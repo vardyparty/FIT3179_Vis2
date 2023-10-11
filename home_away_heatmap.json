@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Which Games Draw The Largest Attendances?",
-  "width": 600,
-  "height": 400,
+  "width": 60,
+  "height": 40,
   "data": {
     "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/games.csv"
   },
