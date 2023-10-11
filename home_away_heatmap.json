@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Which Games Draw The Largest Attendances?",
-  "width": 500,
+  "width": 400,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/games.csv"
@@ -15,7 +15,7 @@
       "title": "Average Attendance"
     },
     "tooltip": [
-      {"field": "year", "type": "nominal"},
+      {"field": "Home Team", "type": "nominal"},
       {"field": "Away Team", "type": "nominal"},
       {
         "field": "Attendance",
