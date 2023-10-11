@@ -19,30 +19,38 @@
   <h1> FIT3179 Visualisation Two (Layout to be developed)</h1>
 
 <div class="pure-g">
-      <div class="pure-u-1-2">
-        <div class="description description-left">
-          <h2>Troubleshooting to see what the issue is </h2>
-          <p>Some of the most attended matches feature Melburnian teams, with local rivalries, clashes with history, 
+<div class="pure-u-1-2">
+<div class="description description-left">
+<p>Some of the most attended matches feature Melburnian teams, with local rivalries, clashes with history, 
   and big capacity stadiums setting the scene for spectators to descend upon football heartland by the thousands. 
   Annual games such as the ANZAC day match between Collingwood and Essendon, and the Good Friday Superclash between 
   North Melbourne and Carlton - regularly draw in excess of 30 thousand attendees. While Melburnian teams, such as 
   Collingwood, Melbourne, and Richmond tend to draw large crowds, signalled by dark blue gradients, emerging teams such as 
   Gold Coast and Greater Western Sydney struggle to attract many spectators, especially at home. This is indicated by numerous 
   squares with lighter blue gradients.</p>
-        </div>
-      </div>
-      <div class="pure-u-1-2">
-        <div id="vis1" class="vis-container"></div>
-      </div>
+</div>
+</div>
+<div class="pure-u-1-2">
+<div id="vis1" class="vis-container"></div>
+</div>
 
   
   
   <script>
     
     var specVis1 = "./home_away_heatmap.json";
+    var specVis2 = "./aus_venues.json";
+    var specVis3 = "./scatter_normalised.json";
+    var specVis4 = "./covid_attendances.json";
+    var specVis5 = "./comparison_barcharts.json";
+    var specVis6 = "./attendance_distribution.json";
     
     vegaEmbed("#vis1", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
-    
+    vegaEmbed("#vis2", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis3", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis4", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis5", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
+    vegaEmbed("#vis6", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
