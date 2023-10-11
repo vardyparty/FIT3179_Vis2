@@ -20,6 +20,9 @@
 
 <div class="pure-g">
 	<div class="pure-u-1-2">
+<div id="vis1" class="vis"></div>
+</div>
+	<div class="pure-u-1-2">
 		<div>
 <p>Some of the most attended matches feature Melburnian teams, with local rivalries, clashes with history, 
   and big capacity stadiums setting the scene for spectators to descend upon football heartland by the thousands. 
@@ -32,66 +35,63 @@
   However, as future diagrams will show, having a large stadium capacity does not guarantee a relatively large turnout.</p>
 		</div>
 	</div>
-<div class="pure-u-1-2">
-<div id="vis1" class="vis"></div>
-</div>
+
 </div>
 
 <div class="pure-g">
-<div class="pure-u-1-2">
-<div id="vis2" class="vis"></div>
-</div>
+
 <div class="pure-u-1-2">
 <div>
 <p> Second idiom </p>
 </div>
 </div>
+<div class="pure-u-1-2">
+<div id="vis2" class="vis"></div>
+</div>
 </div>
 
 <div class="pure-g">
 <div class="pure-u-1-2">
-<div>
-<p>Third idiom</div>
+<div id="vis3" class="vis"></div>
 </div>
 <div class="pure-u-1-2">
-<div id="vis3" class="vis"></div>
+<div>
+<p>Third idiom</div>
 </div>
 </div>
 	
 <div class="pure-g">
-<div class="pure-u-1-2">
-<div id="vis4" class="vis"></div>
-</div>
 <div class="pure-u-1-2">
 <div>
 <p> Fourth idiom </p>
 </div>
 </div>
+<div class="pure-u-1-2">
+<div id="vis4" class="vis"></div>
+</div>
 </div>
 
 <div class="pure-g">
 <div class="pure-u-1-2">
-<div>
-<p>Fifth idiom</div>
+<div id="vis5" class="vis"></div>
 </div>
 <div class="pure-u-1-2">
-<div id="vis5" class="vis"></div>
+<div>
+<p>Fifth idiom</div>
 </div>
 </div>
 	
 
 <div id="vis6" class="vis"></div>
-  <div id="vis7" class="vis"></div>
   
   <script>
     
     var specVis1 = "./home_away_heatmap.json";
-    var specVis2 = "./aus_venues.json";
+    var specVis2 = "./mappew_pavlich.json";
     var specVis3 = "./scatter_normalised.json";
     var specVis4 = "./covid_attendances.json";
     var specVis5 = "./comparison_barcharts.json";
     var specVis6 = "./attendance_distribution.json";
-    var specVis7 = "./map_updated.json";
     
     vegaEmbed("#vis1", specVis1, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis2", specVis2, {mode: "vega-lite"}).then(console.log).catch(console.warn);
@@ -99,7 +99,6 @@
     vegaEmbed("#vis4", specVis4, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis5", specVis5, {mode: "vega-lite"}).then(console.log).catch(console.warn);
     vegaEmbed("#vis6", specVis6, {mode: "vega-lite"}).then(console.log).catch(console.warn);
-    vegaEmbed("#vis7", specVis7, {mode: "vega-lite"}).then(console.log).catch(console.warn);
   </script>
 </body>
 </html>
