@@ -1,5 +1,6 @@
 html, body {
   background-color: #e3fff8
+   padding: 50px;
 }
 
 h1 {
@@ -14,4 +15,12 @@ p {
   font-weight: 750;
   font-family: 'Hind';
   line-height: 1.8;
+}
+
+.left-para {
+  padding-right: 15px;
+}
+
+.right-para {
+  padding-left: 15px;
 }
