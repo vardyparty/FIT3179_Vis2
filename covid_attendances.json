@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "How Have Footy Crowds Changed During Covid?",
+  "width": 500,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/city_seasons.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "venue_filter": {"type": "multi", "fields": ["Venue"], "bind": "legend"}
+      },
+      "encoding": {
+        "x": {"field": "Year", "timeUnit": "year", "title": null},
+        "y": {"field": "Average Attendance", "type": "quantitative"},
+        "color": {
+          "field": "Venue",
+          "type": "nominal",
+          "scale": {"scheme": "tableau20"}
+        },
+        "strokeWidth": {
+          "condition": {"selection": "venue_filter", "value": 3},
+          "value": 0.6
+        },
+        "tooltip": [
+          {"field": "Venue", "type": "nominal"},
+          {"field": "Average Attendance", "type": "quantitative"},
+          {"field": "Year", "type": "temporal", "title": "Year Beginning"},
+          {
+            "field": "Capacity",
+            "type": "quantitative",
+            "title": "Venue Capacity"
+          },
+          {
+            "field": "Average Attendance vs Capacity",
+            "type": "quantitative",
+            "format": "%"
+          }
+        ]
+      },
+      "mark": {
+        "type": "line",
+        "point": true,
+        "tooltip": {"content": "data"},
+        "interpolate": "monotone"
+      }
+    }
+  ],
+  "config": {}
+}
