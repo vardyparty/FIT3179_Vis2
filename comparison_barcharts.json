@@ -3,28 +3,24 @@
   "title": "Average Attendance Increases In Major Australian Cities",
   "width": 600,
   "height": 400,
-  "data": {
-    "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/attendance_normalised.csv"
-  },
-  "repeat": {"layer": ["Worldwide Gross", "US Gross"]},
-  "spec": {
-    "encoding": {
-      "x": {"field": "City"},
-      "y": {"field": "Average Attendance", "type": "quantitative"},
-      "xOffset": {"field": "Year"},
-      "color": {"field": "Year", "type": "ordinal"},
-      "tooltip": [
-        {"field": "Average Attendance", "type": "quantitative"},
-        {"field": "Year", "type": "quantitative"},
-        {
-          "field": "Attendance",
-          "type": "quantitative",
-          "title": "Average Attendance",
-          "aggregate": "average"
-        }
-      ]
-    },
+      "data": {
+        "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/attendance_normalised.csv"},
+      "repeat": {"layer": ["City", "Average Attendance"]},
+      "spec": {
+      "encoding": {
+    "x": {"field": "City"},
+    "y": {"field": "Average Attendance", "type": "quantitative"},
+    "xOffset": {"field": "Year"},
+    "color": {"field": "Year", "type": "ordinal"},
+    "tooltip": [
+      {"field": "Average Attendance", "type": "quantitative"},
+      {"field": "Year", "type": "quantitative"},
+      {"field": "Attendance", "type": "quantitative", "title": "Average Attendance", "aggregate": "average"}]},
+      "layer": [{
     "mark": {"type": "bar", "tooltip": {"content": "data"}}
-  },
-  "config": {}
-}
+  }, {
+    "mark": {
+      "type": "text",
+      "dy": -5},
+    "encoding": {
+      "text": {"field": "Average Attendance", "type": "quantitative", "format": ".5"}}}]}}
