@@ -38,10 +38,14 @@ p {
   text-align: right;
 }
 
-.central-para, .central-vis {
-  margin-left: 75px;
-  margin-right: 75px;
+.central-para{
+  margin-left: 115px;
+  margin-right: 115px;
   text-align: center;
+}
+
+.central-vis {
+  margin-left: 100px;
 }
 
 .right-para {
