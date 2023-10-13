@@ -3,6 +3,10 @@ html, body {
    padding: 50px;
 }
 
+h1 {
+  padding-bottom: 20px;
+}
+
 h1, h2 {
   text-align: center;
   font-family: 'Domine';
@@ -23,13 +27,13 @@ p {
 }
 
 .left-para {
-  padding-right: 25px;
+  padding-right: 30px;
   padding-left: 15px;
   text-align: right;
 }
 
 .right-para {
-  padding-left: 25px;
+  padding-left: 30px;
   padding-right: 15px;
   text-align: left;
 }
