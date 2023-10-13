@@ -38,6 +38,12 @@ p {
   text-align: right;
 }
 
+.central-para, .central-vis {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+
 .right-para {
   padding-left: 30px;
   padding-right: 15px;
