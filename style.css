@@ -5,9 +5,10 @@ html, body {
 }
 
 h1 {
-  padding-yop: 20px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #6ea5b9;
+  background-color: #2c4f5a;
+  color: white;
 }
 
 h1, h2 {
