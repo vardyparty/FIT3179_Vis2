@@ -1,26 +1,42 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Average Attendance Increases In Major Australian Cities",
-  "width": 600,
+  "title": "Average Attendance Increases In Major Australian Cities from 2012 to 2023",
+  "width": 500,
   "height": 400,
-      "data": {
-        "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/attendance_normalised.csv"},
-      "repeat": {"layer": ["City", "Average Attendance"]},
-      "spec": {
-      "encoding": {
-    "x": {"field": "City"},
-    "y": {"field": "Average Attendance", "type": "quantitative"},
-    "xOffset": {"field": "Year"},
-    "color": {"field": "Year", "type": "ordinal"},
-    "tooltip": [
-      {"field": "Average Attendance", "type": "quantitative"},
-      {"field": "Year", "type": "quantitative"},
-      {"field": "Attendance", "type": "quantitative", "title": "Average Attendance", "aggregate": "average"}]},
-      "layer": [{
-    "mark": {"type": "bar", "tooltip": {"content": "data"}}
-  }, {
-    "mark": {
-      "type": "text",
-      "dy": -5},
+  "data": {
+    "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/attendance_normalised.csv"
+  },
+  "repeat": {"layer": ["City", "Average Attendance"]},
+  "spec": {
     "encoding": {
-      "text": {"field": "Average Attendance", "type": "quantitative", "format": ".5"}}}]}}
+      "x": {"field": "City", "axis": {"labelAngle": 315}},
+      "y": {"field": "Average Attendance", "type": "quantitative"},
+      "xOffset": {"field": "Year"},
+      "color": {"field": "Year", "type": "ordinal"},
+      "tooltip": [
+        {"field": "Average Attendance", "type": "quantitative"},
+        {"field": "Year", "type": "quantitative"},
+        {
+          "field": "Attendance",
+          "type": "quantitative",
+          "title": "Average Attendance",
+          "aggregate": "average"
+        }
+      ]
+    },
+    "layer": [
+      {"mark": {"type": "bar", "tooltip": {"content": "data"}}},
+      {
+        "mark": {"type": "text", "dy": -5},
+        "encoding": {
+          "text": {
+            "field": "Average Attendance",
+            "type": "quantitative",
+            "format": ".5"
+          }
+        }
+      }
+    ]
+  },
+  "config": {}
+}
