@@ -5,6 +5,7 @@ html, body {
 }
 
 h1 {
+  padding-yop: 20px;
   padding-bottom: 20px;
   background-color: #6ea5b9;
 }
@@ -16,7 +17,9 @@ h1, h2 {
 
 h2 {
   background-color: white;
-  padding-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 }
 
 p {
