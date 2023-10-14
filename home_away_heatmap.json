@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Which Home and Away Team Combinations Draw The Largest Attendances?",
+  "title": "Which Home and Away Team Combinations Draw the Largest Attendances?",
   "width": 400,
   "height": 400,
   "data": {
