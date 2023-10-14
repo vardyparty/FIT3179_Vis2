@@ -37,8 +37,8 @@ p {
 }
 
 .central-para{
-  margin-left: 300px;
-  margin-right: 300px;
+  margin-left: 320px;
+  margin-right: 320px;
   text-align: center;
 }
 
@@ -47,7 +47,6 @@ p {
 }
 
 .right-para {
-  margin-left: 35px;
   padding-left: 35px;
   text-align: left;
 }
