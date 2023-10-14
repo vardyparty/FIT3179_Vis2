@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Attendance Distribution for all Australian Football Venues",
+  "title": "Normalised per-Stadium Capacity and per-City Proportions For Major Cities",
   "width": 500,
   "height": 400,
   "data": {
@@ -16,6 +16,7 @@
     "x": {
       "field": "Normalised Percentage of Stadium Capacity",
       "type": "quantitative",
+      "title": "Percentage of Stadium Capacity Filled",
       "scale": {"domain": [0, 1]}},
     "y": {
       "field": "Attendees per Capita",
