@@ -39,8 +39,8 @@ p {
 }
 
 .central-para{
-  margin-left: 135px;
-  margin-right: 135px;
+  margin-left: 155px;
+  margin-right: 155px;
   text-align: center;
 }
 
@@ -50,7 +50,6 @@ p {
 
 .right-para {
   padding-left: 20px;
-  padding-right: 20px;
   text-align: left;
 }
 
