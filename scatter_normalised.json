@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Normalised per-Stadium Capacity and per-City Proportions For Major Cities",
+  "title": "Normalised per-Stadium Capacity and per-City Proportions for Major Cities",
   "width": 500,
   "height": 400,
   "data": {
