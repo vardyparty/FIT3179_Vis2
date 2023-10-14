@@ -1,6 +1,6 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Interpolation of Major Venues' Average Attendances for 2017-2023",
-  "width": 500,
+  "width": 450,
   "height": 400,
       "data": {
         "url": "https://raw.githubusercontent.com/vardyparty/FIT3179_Vis2/main/city_seasons.csv"},
