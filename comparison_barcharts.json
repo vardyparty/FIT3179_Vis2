@@ -14,29 +14,19 @@
       "xOffset": {"field": "Year"},
       "color": {"field": "Year", "type": "ordinal"},
       "tooltip": [
+        {"field": "City", "type": "nominal"},
         {"field": "Average Attendance", "type": "quantitative"},
         {"field": "Year", "type": "quantitative"},
-        {
-          "field": "Attendance",
+        {"field": "Attendance",
           "type": "quantitative",
           "title": "Average Attendance",
-          "aggregate": "average"
-        }
-      ]
-    },
+          "aggregate": "average"}]},
     "layer": [
       {"mark": {"type": "bar", "tooltip": {"content": "data"}}},
-      {
-        "mark": {"type": "text", "dy": -5},
+      {"mark": {"type": "text", "dy": -5},
         "encoding": {
           "text": {
             "field": "Average Attendance",
             "type": "quantitative",
-            "format": ".5"
-          }
-        }
-      }
-    ]
-  },
-  "config": {}
-}
+            "format": ".5"}}}]},
+  "config": {}}
